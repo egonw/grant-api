@@ -1,7 +1,8 @@
 #+ summary: Lists grants with a CORDIS identifier
+#+ endpoint_in_url: False
+#+ endpoint: http://query.wikidata.org/sparql
 #+ tags:
-#+   - CORDIS
-#+   - grant
+#+   - Grants
 
 PREFIX bd: <http://www.bigdata.com/rdf#>
 PREFIX wikibase: <http://wikiba.se/ontology#>
