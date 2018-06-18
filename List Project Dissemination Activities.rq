@@ -11,7 +11,7 @@ PREFIX wikibase: <http://wikiba.se/ontology#>
 PREFIX wdt: <http://www.wikidata.org/prop/direct/>
 
 SELECT ?output ?outputLabel ?start_time WHERE {
-  ?_project_iri wdt:P859 wd:Q27990087 ;
+  ?output wdt:P859 ?_project_iri ;
               wdt:P577 ?start_time .
   SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
 }
