@@ -1,0 +1,17 @@
+#+ summary: Lists all project research outputs
+#+ endpoint_in_url: False
+#+ endpoint: http://query.wikidata.org/sparql
+#+ tags:
+#+   - Projects
+#+ enumerate:
+#+   - project
+
+PREFIX bd: <http://www.bigdata.com/rdf#>
+PREFIX wikibase: <http://wikiba.se/ontology#>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+
+SELECT ?output ?outputLabel ?start_time WHERE {
+  ?_project_iri wdt:P859 wd:Q27990087 ;
+              wdt:P577 ?start_time .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+}
