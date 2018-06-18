@@ -12,12 +12,6 @@ PREFIX wikibase: <http://wikiba.se/ontology#>
 PREFIX wdt: <http://www.wikidata.org/prop/direct/>
 
 SELECT ?partner ?partnerLabel
-WITH {
-  SELECT ?partner WHERE {
-    ?_project_iri wdt:P527 | wdt:P710 ?partner .
-  }
-} AS %result
-WHERE {
-  INCLUDE %result
+  ?_project_iri wdt:P527 | wdt:P710 ?partner .
   SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
 }
