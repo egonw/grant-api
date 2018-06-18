@@ -3,7 +3,7 @@
 #+ endpoint_in_url: False
 #+ endpoint: http://query.wikidata.org/sparql
 #+ tags:
-#+   - Grants
+#+   - Projects
 #+ enumerate:
 #+   - project
 
