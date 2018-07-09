@@ -7,3 +7,4 @@ queries in this repository look like as OpenAPI:
 
 ![Screenshot of the OpenAPI specified by the SPARQL queries and metadata in this repository](Screenshot_20180618_135223.png)
 
+A bit more context is given in [this blog post](http://chem-bla-ics.blogspot.com/2018/07/converting-any-sparql-endpoint-to.html).
